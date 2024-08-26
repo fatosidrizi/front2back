@@ -1,0 +1,22 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+  }
+  
+  .box.move {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes move {
+    from {
+      left: 0;
+    }
+    to {
+      left: calc(100% - 100px);
+    }
+  }
+  
